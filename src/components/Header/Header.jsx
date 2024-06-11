@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "../Button/Button";
 
 
 const Header = () => {
@@ -17,3 +18,5 @@ const Header = () => {
         </div>
     )
 }
+
+export default Header;
