@@ -6,13 +6,14 @@ import './Header.css'
 
 const Header = () => {
 
-    const { onClose, user } = useTelegram();
+    const { onClose, user, onToggleButton } = useTelegram();
     console.log(user)
 
     return (
 
         <div className={"header"}>
             <Button onClick={onClose}>Закрыть</Button>
+            <button onClick={onToggleButton}>toggle</button>
             <div className={"username"}>
                 {user?.username}
             </div>
